@@ -87,7 +87,7 @@ export default function Footer() {
             },
             {
               icon: <FaTelegramPlane />,
-              link: "https://telegram.org/",
+              link: "https://t.me/i_sobirov5",
               hover: "hover:text-sky-500",
             },
             {

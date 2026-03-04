@@ -38,7 +38,7 @@ const App = () => {
     fetchProducts();
   }, [currentPage]);
 
-  // 👇 Faqat 6 ta page ko‘rsatish
+  // Faqat 6 ta page ko‘rsatish
   const getVisiblePages = () => {
     const pages = [];
     const maxVisible = 6;
@@ -60,7 +60,6 @@ const App = () => {
 
   return (
     <>
-      <Header />
 
       <div className="bg-gray-50 min-h-screen py-16">
         <div className="max-w-7xl mx-auto px-6">
@@ -68,7 +67,7 @@ const App = () => {
             <div className="flex justify-center items-center h-60">
               <div className="w-14 h-14 border-4 border-gray-300 border-t-black rounded-full animate-spin"></div>
             </div>
-          ) : (
+          ): (
             <>
               {/* Products */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
@@ -142,8 +141,6 @@ const App = () => {
           )}
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };
